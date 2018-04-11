@@ -1,0 +1,243 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-size: 120%;
+    padding-bottom: 3em;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #e0a80d;
+}
+
+svg {
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+#header-container {
+    background-color: #2b2c2c;
+    color: #f2f2f2;
+}
+
+#page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    max-width: 90em;
+    margin: auto;
+}
+
+#avatar {
+    text-align: center;
+    padding: 1em 0 1em 0;
+    width: 95%;
+}
+
+#avatar img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#personal-info {
+    width: 100%;
+}
+
+#personal-info-title {
+    display: none;
+    visibility: hidden;
+}
+
+#name {
+    color: #e0a80d;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+#first-name {
+    display: block;
+}
+
+#last-name {
+    text-transform: uppercase;
+}
+
+#job-title {
+    font-size: 1.5em;
+}
+
+#contact-info {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#contact-info li {
+    padding-right: 1em;
+}
+
+#summary-title {
+    display: none;
+    visibility: hidden;
+}
+
+#summary {
+    font-weight: bold;
+}
+
+#summary p {
+    font-size: 1.2em;
+}
+
+#key-skills, #additional-experience {
+    margin-top: 1.9em;
+}
+
+#skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#skill-list li { 
+    background-color: #e0a80d;
+    padding: 0.4em;
+    margin: 0.3em;
+    border-radius: 0.3em;
+}
+
+#technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#technologies h1 {
+    width: 100%;
+    margin-top: 0.3em;
+}
+
+#technologies section {
+    margin: 0 0.2em 0 0.2em;
+    text-align: center;
+}
+
+#technologies ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 0.3em solid #e0a80d;
+}
+
+.psg {
+    width: 95%;
+    max-width: 90em;
+    margin: auto;
+}
+
+.psg h1 {
+    text-align: center;
+}
+
+.psh {
+    border-radius: 0.3em;
+    background-color: #2b2c2c;
+    padding: 0.5em;
+    color: #f2f2f2;
+    display: block;
+}
+
+.rre h1 {
+    text-align: left;
+    text-transform: uppercase;
+    margin:0;
+    font-size: 1em;
+}
+
+.rre h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.rre p {
+    margin-top: 0;
+}
+
+.ts h1 {
+    margin: 0;
+    margin-top: 0.3em;
+}
+
+@media (min-width: 30em) {
+    .psg h1 {       
+        border-radius: initial;
+        background-color: initial;
+        padding: initial;
+    }
+
+    .psh {
+        display: inline;
+    }
+}
+
+@media (min-width: 35em) {
+    #page-header {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #avatar {
+        width: 30%;
+        padding: 2em;
+    }
+
+    #personal-info {
+        width: 70%;
+    }
+
+    #technologies {
+        justify-content: left;
+    }
+
+    #technologies section {
+        margin: 0 3em 0 0;
+    }
+}
+
+@media (min-width: 70em) {
+    #personal-info {
+        padding: 2em;
+    }
+
+    #contact-info {
+        flex-direction: row;
+    }
+
+    #technologies section {
+        margin-right: 3em;
+    }
+}
+
+@media print {
+    body {
+        font-size: 80%;
+        background: #ffffff;
+    }
+
+    #primary-sections {
+        page-break-after: always;
+    }
+
+    #secondary-sections {
+        margin-top: 2em;
+    }
+}
