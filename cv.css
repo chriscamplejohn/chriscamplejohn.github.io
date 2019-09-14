@@ -233,8 +233,9 @@ svg {
         background: #ffffff;
     }
 
-    #primary-sections {
-        page-break-after: always;
+    .pb {
+        page-break-before: always;
+        margin-top: 2em;
     }
 
     #secondary-sections {
