@@ -96,7 +96,7 @@ svg {
     font-size: 1.2em;
 }
 
-#key-skills, #additional-experience {
+section {
     margin-top: 1.9em;
 }
 
@@ -229,16 +229,12 @@ svg {
 
 @media print {
     body {
-        font-size: 80%;
+        font-size: 74%;
         background: #ffffff;
     }
 
     .pb {
         page-break-before: always;
-        margin-top: 2em;
-    }
-
-    #secondary-sections {
-        margin-top: 2em;
+        margin-top: 5em;
     }
 }
